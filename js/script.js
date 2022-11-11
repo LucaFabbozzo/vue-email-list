@@ -11,7 +11,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      title: 'Email List',
+      title: 'my best friends',
       email1: '',
       email2: '',
       email3: '',
