@@ -32,7 +32,6 @@ createApp({
       .then( result => {
         console.log(result.data);
         this.email1 = result.data.response;
-        this.isLoaded = true;
       })
       .catch( error =>  {
         console.log(error); 
@@ -41,7 +40,6 @@ createApp({
       .then( result => {
         console.log(result.data);
         this.email2 = result.data.response;
-        this.isLoaded = true;
       })
       .catch(error => {
         console.log(error);
@@ -50,7 +48,6 @@ createApp({
       .then( result => {
         console.log(result.data);
         this.email3 = result.data.response;
-        this.isLoaded = true;
       })
       .catch(error => {
         console.log(error);
@@ -59,7 +56,6 @@ createApp({
       .then(result => {
         console.log(result.data);
         this.email4 = result.data.response;
-        this.isLoaded = true;
       })
       .catch(error => {
         console.log(error);
@@ -68,7 +64,6 @@ createApp({
        .then(result => {
         console.log(result.data)
         this.email5 = result.data.response;
-        this.isLoaded = true;
        })
        .catch(error => {
         console.log(error);
@@ -77,7 +72,6 @@ createApp({
         .then(result => {
           console.log(result.data)
           this.email6 = result.data.response;
-          this.isLoaded = true;
         })
         .catch(error => {
           console.log(error);
@@ -86,7 +80,6 @@ createApp({
           .then(result => {
             console.log(result.data);
             this.email7 = result.data.response;
-            this.isLoaded = true;
           })
           .catch(error => {
               console.log(error)
@@ -95,7 +88,6 @@ createApp({
           .then(result => {
             console.log(result.data);
             this.email8 = result.data.response;
-            this.isLoaded = true;
           })
           .catch(error => {
             console.log(error)
@@ -104,7 +96,6 @@ createApp({
           .then(result => {
             console.log(result.data);
             this.email9 = result.data.response;
-            this.isLoaded = true;
           })
           .catch(error => {
             console.log(error)
@@ -117,7 +108,9 @@ createApp({
           })
           .catch(error => {
             console.log(error)
+         
           })
+          
     },
       
   },
