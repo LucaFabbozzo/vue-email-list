@@ -70,47 +70,45 @@ createApp({
        }),
       axios.get('https://flynn.boolean.careers/exercises/api/random/mail?title=numero')
         .then(result => {
-          console.log(result.data)
-          this.email6 = result.data.response;
+        console.log(result.data)
+        this.email6 = result.data.response;
+      })
+      .catch(error => {
+        console.log(error);
+      }),
+      axios.get('https://flynn.boolean.careers/exercises/api/random/mail?title=numero')
+        .then(result => {
+          console.log(result.data);
+          this.email7 = result.data.response;
+        })
+      .catch(error => {
+        console.log(error)
+      }),
+      axios.get('https://flynn.boolean.careers/exercises/api/random/mail?title=numero')
+      .then(result => {
+        console.log(result.data);
+        this.email8 = result.data.response;
         })
         .catch(error => {
-          console.log(error);
-         }),
-        axios.get('https://flynn.boolean.careers/exercises/api/random/mail?title=numero')
-          .then(result => {
-            console.log(result.data);
-            this.email7 = result.data.response;
-          })
-          .catch(error => {
-              console.log(error)
-          }),
-          axios.get('https://flynn.boolean.careers/exercises/api/random/mail?title=numero')
-          .then(result => {
-            console.log(result.data);
-            this.email8 = result.data.response;
-          })
-          .catch(error => {
-            console.log(error)
-          }),
-          axios.get('https://flynn.boolean.careers/exercises/api/random/mail?title=numero')
-          .then(result => {
-            console.log(result.data);
-            this.email9 = result.data.response;
-          })
-          .catch(error => {
-            console.log(error)
-          }),
-          axios.get('https://flynn.boolean.careers/exercises/api/random/mail?title=numero')
-          .then(result => {
-            console.log(result.data);
-            this.email10 = result.data.response;  
-            this.isLoaded = true;
-          })
-          .catch(error => {
-            console.log(error)
-         
-          })
-          
+        console.log(error)
+      }),
+       axios.get('https://flynn.boolean.careers/exercises/api/random/mail?title=numero')
+        .then(result => {
+        console.log(result.data);
+        this.email9 = result.data.response;
+        })
+      .catch(error => {
+        console.log(error)
+        }),
+      axios.get('https://flynn.boolean.careers/exercises/api/random/mail?title=numero')
+       .then(result => {
+        console.log(result.data);
+        this.email10 = result.data.response;  
+        this.isLoaded = true;
+        })
+        .catch(error => {
+          console.log(error)
+        }) 
     },
       
   },
