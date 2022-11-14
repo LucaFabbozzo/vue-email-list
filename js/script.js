@@ -1,4 +1,3 @@
-
 // Attraverso l’apposita API di Boolean
 // https://flynn.boolean.careers/exercises/api/random/mail
 // generare 10 indirizzi email e stamparli in pagina all’interno di una lista.
@@ -12,33 +11,17 @@ createApp({
   data() {
     return {
       title: 'my best friends',
-      emails: [    
-      'email1',
-      'email2',
-      'email3',
-      'email4',
-      'email5',
-      'email6',
-      'email7',
-      'email8',
-      'email9',
-      'email10',
-      ],
+      emails: [],
       isLoaded: false
     }
   },
   methods: {
     getApi() {
-      this.isLoaded = false;
-      for (let i = 0; i < this.emails.length; i++) {
-        axios.get('https://flynn.boolean.careers/exercises/api/random/mail?title=numero')
+      for (let i = 1; i <= 10; i++) {
+        axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
       .then( result => {
-        console.log(result.data);
-        this.emails[i] = result.data.response;
-        this.isLoaded = true;
-      })
-      .catch( error =>  {
-        console.log(error); 
+        console.log(result.data.response);
+        this.emails.push(result.data.response);
       })
     }
   },

@@ -17,7 +17,7 @@
 
   <div id="app" class="container d-flex align-items-center justify-content-center vh-100">
     <h1>{{title}}</h1>
-    <ul v-if="isLoaded">
+    <ul v-if="emails.length === 10">
       <li v-for="mail in emails">{{mail}}</li>
     </ul>
     <div v-else > 
